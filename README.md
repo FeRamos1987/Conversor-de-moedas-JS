@@ -13,7 +13,7 @@ O usuário seleciona a moeda de origem, a moeda de destino e insere o valor dese
 
 ## 🖼️ Preview
 
-![Preview do projeto](./assets/screenshot.png)
+<img src="./assets/screenshot.png" width="250">
 
 ## 🚀 Funcionalidades
 
