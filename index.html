@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">   ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+   <link rel="stylesheet" href="Styles.css">
+    <title>DevClube - Convert Money</title>
+</head>
+<body>
+    <img class="logo" src ="./assets/logo.gif" alt="Logo-do-DevClube" class="logo">
+
+    <main>
+
+        <label>
+            Converter <b>de:</b>
+            <select class="select-from" onchange="changeCurrency()">
+                <option value="real">Real</option>
+                <option value="dolar">Dólar Americano</option>
+                <option value="euro">Euro</option>
+                <option value="libra">Libra Esterlina</option>
+                <option value="yen">Yen Chinês</option>
+            </select>
+
+            <br><br>
+
+            Converter <b>para:</b>
+            <select class="select-to" onchange="changeCurrency()">
+                <option value="dolar">Dólar Americano</option>
+                <option value="euro">Euro</option>
+                <option value="libra">Libra Esterlina</option>
+                <option value="yen">Yen Chinês</option>
+            </select>
+        </label>
+
+        <br><br>
+
+        <label>
+            Valor
+            <input class="input-currency" placeholder="Digite o valor">
+        </label>
+
+        <br><br>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+
+            <!-- MOEDA DE ORIGEM -->
+            <div class="currency-box">
+                <img class="currency-img-from" src="./assets/brasil 2.png">
+                <p class="currency">Moeda origem</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
+            </div>
+
+            <br>
+
+            <!-- MOEDA DESTINO -->
+            <div class="currency-box">
+                <img class="currency-img" src="./assets/estados-unidos.png">
+                <p class="currency" id="currency-name">Dólar Americano</p>
+                <p class="currency-value">US$ 0,00</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./Scripts.js"></script>
+</body>
+
+</html>
